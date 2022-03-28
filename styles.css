@@ -116,7 +116,18 @@
     transition: all 0.3s ease;
 }
 
+/* Header Media Query */
+@media screen and (max-width: 1250px){
+    .navbar__links{
+        font-size: 1.3rem;
+    }
+    .button{
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width: 960px){
+
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -211,6 +222,12 @@
     }
 }
 
+@media screen and (max-width: 880px){
+    .navbar__container #navbar__logo{
+        font-size: 3rem;
+    }
+}
+
 /* Hero Section */
 .hero{
     height: 100vh;
@@ -245,8 +262,109 @@
 .hero_container .hero_img{
     position: relative;
     left: 4rem;
+    width: 50%;
 }
 
+/* Hero Media Query */
+@media screen and (max-width: 1300px){
+    .navbar .navbar__container h2{
+        font-size: 1.2rem;
+        right: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .navbar .navbar__container h2{
+        font-size: 1rem;
+        left: 0.1rem;
+    }
+
+    .hero_container .hero_img{
+        width: 60%;
+    }
+    .hero_container  .hero_feature h1{
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+    .hero_feature i {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .hero_container  .hero_feature h1{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .hero_feature i {
+        font-size: 1rem;
+    }
+    .hero_container .hero_img {
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .hero_container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .hero{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_container .hero_feature h1{
+        margin-left: 1px;
+    }
+    .hero_container .hero_img{
+        left: 0.7rem;
+        right: 15rem;
+        
+    }
+    .hero_container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .hero_container .hero_img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;  
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero_container{
+        left: 0;
+        text-align: center;
+    }
+
+    .hero_container .hero_feature h1{
+       font-size: 14px;
+    }
+
+    .hero_container .hero_feature i{
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .hero_container .hero_img{
+     display: block;
+      margin: auto;
+      left: 0;
+      
+    }
+}
+
+
+/* End Hero Media Query */
 
 /* End Hero Section */
 
