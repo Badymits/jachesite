@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+
 }
 
 .navbar{
@@ -250,6 +252,7 @@
 
 
 /* Feature Section */
+
 .features .feature_container{
     display: flex;
     flex-direction: row;
@@ -260,5 +263,37 @@
 }
 .feature_container h1{
     text-align: center;
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    
 }
+
+.feature_container p{
+    text-align: justify;
+    font-weight: 50;
+    font-size: 1.2rem;
+    font-family: 'M PLUS 1', sans-serif;
+}
+.feature_text:nth-child(2){
+    margin-bottom: 1.6rem;
+}
+.feature_text:nth-child(3){
+    margin-top: 1.5rem;
+}
+
+.feature_container .feature_text{
+    width: 50%;
+    float: left;
+    padding: 25px;
+}
+
+.feature_container i{
+    position: relative;
+    left: 10rem;
+    bottom: 1.4rem;
+    font-size: 2rem;
+    color: #091747;
+}
+
 /* End Feature Section */
