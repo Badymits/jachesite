@@ -26,10 +26,10 @@
                     <a href="/" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">Tech</a>
+                    <a href="/tech.html" class="navbar__links">Products</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/=" class="navbar__links">Products</a>
+                    <a href="/=" class="navbar__links">About</a>
                 </li>
                 <li class="navbar__btn">
                     <a href="/=" class="button">Subscribe</a>
@@ -88,8 +88,16 @@
             <h1>JACHE</h1>
             <h2>Better Nutrition for a better life</h2>
             <div class="input">
-                <input type="text" placeholder="Enter email address...">
-                <input type="submit" name="submit_button" >
+                <p>Get some updates from us in your inbox. </br>
+                    Be the first to learn about our new products!</p>
+                <form action="POST" data-netlify="true">
+                    <input type="text" name="user_email"id="textbox-input" placeholder="Enter email address...">
+                    <input type="submit" id="button-input" name="submit_button" >
+                    <div class="field">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </form>
+                
             </div>
             
             <div class="social-icon">
@@ -106,6 +114,7 @@
                     <a href="#"><img src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a>
                 </div>
             </div>
+            
             <p>Copyright © 2022 JACHE. All rights reserved</p>
         </div>
     </div>

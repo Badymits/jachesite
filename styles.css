@@ -56,7 +56,7 @@
 .navbar .navbar__container h2{
     position: relative;
     top: 2.5rem;
-    right: 3.5rem;
+    right: 3rem;
     font-size: 1.3rem;
     font-style: italic;
     color: #091747;
@@ -437,11 +437,40 @@
 
 .footer .input{
     padding: 12px;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.footer .input #textbox-input{
+    height: 40px;
+    width: 30rem;
+    font-size:1rem;
+}
+
+.footer .input #button-input{
+    height: 40px;
+    width: 6rem;
+    font-size: 1rem;
+}
+
+.input p{
+    padding-bottom: 10px;
 }
 
 .footer .social-icon{
     display: flex;
     margin-bottom: 30px;
+}
+.footer h1{
+    color: #091747;
+    font-weight: 100;
+    font-size: 2.7rem;
+}
+
+.footer h2{
+    color: #091747;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 14px;
 }
 
 .footer .social-item{
