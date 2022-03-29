@@ -168,14 +168,22 @@
     width: 250px;
 }
 
+/* .products .products-item:nth-child(1) p{
+
+} */
+
 .products-item:nth-child(2) img{
     height: 260px;
-    width: 250px;
-    
+    width: 250px; 
 }
 .products .products-item:nth-child(2) p{
     font-size: 1rem;
     font-family: 'M PLUS 1', sans-serif;
+}
+
+.products-item:nth-child(3) img{
+    height: 260px;
+    width: 250px; 
 }
 
 .products .products-item h2{
