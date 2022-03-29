@@ -6,6 +6,13 @@
     font-family: 'Kumbh Sans', sans-serif;
 
 }
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .navbar{
     background: #C0CAED;
@@ -415,3 +422,32 @@
 }
 
 /* End Feature Section */
+
+/* Footer Section */
+.footer_email{
+    background-image: linear-gradient(60deg, #C0CAED 0%, #C0CAED 100%);
+    width: 100%;
+}
+.footer_email .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer .input{
+    padding: 12px;
+}
+
+.footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 35px;
+    justify-content: space-between;
+}
+/* End Footer Section */
