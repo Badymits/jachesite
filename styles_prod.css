@@ -240,6 +240,7 @@
 }
 
 .products #footer_div_p{
+    padding-top: 1rem;
     text-align: center;
     color: #091747;
     font-weight: 100;
@@ -248,4 +249,79 @@
 
 /* End Products Section */
 
+/* divider */
+hr.rounded{
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+/* Price section */
+.price .prices{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    padding-top: 20px;
+}
+
+.prices .prices-top{
+    max-width: 840px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.price h1{
+    color: #091747;
+    font-weight: 100;
+    font-family: 'M PLUS 1', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.price .prices-top p {
+    font-weight: 100;
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.price .prices-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.prices-bottom .price-item{
+    flex-basis: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    outline: 0;
+}
+.prices-bottom .price-item p{
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.prices-bottom .price-item h4{
+    font-family: 'M PLUS 1', sans-serif;
+    padding: 7px;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+/* End Price section */
 
