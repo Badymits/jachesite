@@ -479,4 +479,8 @@
     margin: 0 35px;
     justify-content: space-between;
 }
+
+.footer .field{
+    text-align: center;
+}
 /* End Footer Section */
