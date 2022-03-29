@@ -230,6 +230,21 @@
     margin-bottom: 20px;
 }
 
+.products #footer_div_text{
+    padding-top: 5rem;
+    text-align: center;
+    color: #091747;
+    font-weight: 100;
+    font-family: 'M PLUS 1', sans-serif;
+    font-style: italic;
+}
+
+.products #footer_div_p{
+    text-align: center;
+    color: #091747;
+    font-weight: 100;
+    font-family: 'M PLUS 1', sans-serif;
+}
 
 /* End Products Section */
 
