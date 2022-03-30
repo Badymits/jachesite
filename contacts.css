@@ -126,6 +126,31 @@
 }
 /* end header section */
 
+/* contacts section */
+.contacts .contact-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+    padding-bottom: 12rem;
+}
+
+.contacts .contact-items img{
+    display: inline-block;
+}
+
+.contacts #contact-main-text{
+    text-align: center;
+    font-weight: 100;
+    font-family: 'M PLUS 1', sans-serif;
+    color:#091747;
+    padding-top: 3rem;
+}
+
+/* end contacts section */
+
 /* Footer Section */
 .footer_email{
     background-image: linear-gradient(60deg, #C0CAED 0%, #C0CAED 100%);
