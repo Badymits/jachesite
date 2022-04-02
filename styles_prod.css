@@ -296,7 +296,7 @@ hr.rounded{
 }
 
 .prices-bottom .price-item{
-    flex-basis: 22%;
+    flex-basis: 23%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,6 +321,10 @@ hr.rounded{
     padding: 7px;
     font-weight: 200;
     font-size: 1.3rem;
+}
+
+.prices #month_tag{
+    padding-bottom: 15px;
 }
 
 /* End Price section */
