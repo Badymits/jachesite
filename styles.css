@@ -524,17 +524,17 @@ border-color: #e74c3c;
 color: #27ae60;
 border-color: #27ae60;
 }
-  form .error-text{
-    position: relative;
-    margin: 15px 0 -5px 0;
-    background: #e74c3c;
-    color: #fceae8;
-    font-size: 18px;
-    padding: 8px;
-    border-radius: 5px;
-    user-select: none;
-    display: none;
-  }
+.input .error-text{
+position: relative;
+margin: 15px 0 -5px 0;
+background: #e74c3c;
+color: #fceae8;
+font-size: 18px;
+padding: 8px;
+border-radius: 5px;
+user-select: none;
+display: none;
+}
   form .error-text:before{
     position: absolute;
     content: '';
