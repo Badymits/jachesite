@@ -52,10 +52,16 @@
                 <p>Get some updates from us in your inbox. </br>
                     Be the first to learn about our new products!</p>
                 <form method="POST" data-netlify="true" action="/success.html">
-                    <input type="text" name="user_email"id="textbox-input" placeholder="Enter email address...">
+                    <input onkeyup="check()" type="text" name="user_email"id="textbox-input" placeholder="Enter email address...">
                     <input type="submit" id="button-input" name="submit_button" value="SUBMIT">
                 </form>
-                
+                <div class="icons">
+                    <span class="icon1 fas fa-exclamation"></span>
+                    <span class="icon2 fas fa-check"></span>
+                </div>
+                <div class="error-text">
+                    Please Enter Valid Email Address
+                </div>
             </div>
             
             <div class="social-icon">
@@ -73,6 +79,39 @@
             <p>Copyright © 2022 JACHE. All rights reserved</p>
         </div>
     </div>
+    <script>
+        const email = document.querySelector("#textbox-input");
+        const icon1 = document.querySelector(".icon1");
+        const icon2 = document.querySelector(".icon2");
+        const error = document.querySelector(".error-text");
+        const btn = document.querySelector("#button-input");
+        let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        function check(){
+          if(email.value.match(regExp)){
+            email.style.borderColor = "#27ae60";
+            email.style.background = "#eafaf1";
+            icon1.style.display = "none";
+            icon2.style.display = "block";
+            error.style.display = "none";
+            btn.style.display = "inline";
+          }else{
+            email.style.borderColor = "#e74c3c";
+            email.style.background = "#fceae9";
+            icon1.style.display = "block";
+            icon2.style.display = "none";
+            error.style.display = "block";
+            btn.style.display = "none";
+          }
+          if(email.value == ""){
+            email.style.borderColor = "lightgrey";
+            email.style.background = "#fff";
+            icon1.style.display = "none";
+            icon2.style.display = "none";
+            error.style.display = "none";
+            btn.style.display = "none";
+          }
+        }
+     </script>
     <!-- end footer section -->
 </body>
 </html>
