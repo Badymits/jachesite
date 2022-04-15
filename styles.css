@@ -407,6 +407,10 @@ body{
         height: 450px;
         padding-right: 10px;
     }
+    .navbar .navbar__container h2{
+        font-size: 15px;
+        left: 0.1rem;
+    }
 }
 
 
