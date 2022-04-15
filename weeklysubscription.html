@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="weeklysubscription.css">
+    <title>Weekly Subscription</title>
+</head>
+<body>
+    <!-- Step by step process -->
+    <!-- 1. Choose your supplements (this will include supplements that are not yet available) -->
+    <!-- 2. Enter number of pieces and mg (cannot exceed 30pcs)-->
+    <!-- 3. Set time and day of delivery -->
+    <!-- 4. Select payment method -->
+    <!-- 5. Send Email (instead of them paying, just ask for their email instead) -->
+
+    <!-- Header section -->
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">JACHE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <h2>Better Nutrition for a better life</h2>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/contact.html" class="navbar__links">Contact</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#footer" class="button">Subscribe</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End header section -->
+
+    <div class="containers">
+        <div class="row">
+            <section>
+                <div class="wizard">
+                    <div class="wizard-inner">
+                        <div class="connecting-line"></div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active stepactive1">
+                                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                                        <span class="round-tab round1">
+                                            1.Your detail
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="disabled stepactive2">
+                                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                                        <span class="round-tab round2">
+                                            2.order
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="disabled stepactive3">
+                                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                        <span class="round-tab round3">
+                                            3.payment
+                                        </span>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="disabled stepactive4">
+                                    <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                        <span class="round-tab round4">
+                                            Done!
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <form role="form">
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Your content</h1>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat</span>
+                                    </div>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li><button type="button" class="btn next-step">Save and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step2">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Your content</h1>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat</span>
+                                    </div>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li><button type="button" class="btn prev-step"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</button></li>
+                                    <li><button type="button" class="btn next-step">Save and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step3">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Your content</h1>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat</span>
+                                    </div>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li><button type="button" class="btn prev-step"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</button></li>
+                                    <li><button type="button" class="btn btn-info-full next-step">Save and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="complete">
+                                <div class="col-md-12">
+                                    <h1>Your Last Page</h1>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat</span>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li><button type="button" class="btn prev-step"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</button></li>
+                                    <li><button type="button" class="btn btn-info-full next-step">Save and Submit</button></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./weeklysubscription.js"></script>
+</body>
+</html>

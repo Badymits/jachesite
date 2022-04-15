@@ -327,6 +327,28 @@ hr.rounded{
     padding-bottom: 15px;
 }
 
+.prices .buttonplan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    height: 100%;
+    width: 80%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin: 10px;
+    background: #03B4C6;
+    color: #fff;
+}
+
+.prices .buttonplan:hover{
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+
 /* End Price section */
 
 /* Footer Section */
