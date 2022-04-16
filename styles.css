@@ -139,7 +139,12 @@ body{
     }
     #navbar__logo{
         font-size: 3rem;
-        
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #navbar__logo{
+        font-size: 2.6rem;
     }
 }
 
@@ -159,6 +164,7 @@ body{
         padding-left: 12rem;
         padding-top: 12px;
         display: inline-flex;
+        
     }
 
     .navbar__menu{
@@ -176,7 +182,7 @@ body{
     }
 
     .navbar__menu.active{
-        background: #131313;
+        background: #C0CAED;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -223,8 +229,8 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 80px;
+        width: 60%;
+        height: 50px;
         margin: 0;
     }
 
@@ -248,7 +254,7 @@ body{
 
 @media screen and (max-width: 880px){
     .navbar__container #navbar__logo{
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
 }
@@ -364,7 +370,7 @@ body{
         flex-direction: column;
     }
     .hero_container .hero_img{
-        padding-right: 5.4rem;
+        padding-right: 3rem;
     }
 }
 
@@ -405,15 +411,13 @@ body{
     .hero_container .hero_img img{
         width: 420px;
         height: 450px;
-        padding-right: 10px;
+        padding-right: 5px;
     }
     .navbar .navbar__container h2{
         font-size: 15px;
-        left: 0.1rem;
+        
     }
 }
-
-
 /* End Hero Media Query */
 
 /* End Hero Section */
@@ -436,7 +440,6 @@ body{
     margin-bottom: 20px;
     
 }
-
 .feature_container p{
     text-align: justify;
     font-weight: 50;
@@ -463,6 +466,76 @@ body{
     font-size: 2rem;
     color: #091747;
 }
+/* Features media query */
+@media screen and (max-width: 1150px){
+    /* .feature_container h1 {
+        color: white;
+    } */
+    .features .feature_container{
+        height: 890px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 12px;
+    }
+    .feature_container .feature_text h1{
+        width: 100%;
+        float: none;
+    }
+    .feature_container i {
+        position: relative;
+        /* top: 20%; */
+        /* left: 11.7rem; */
+        
+        
+    } 
+}
+
+@media screen and (max-width: 880px){
+    .features .feature_container{
+        right: 4px;
+        left: 25px;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .feature_container i{
+        position: relative;
+        left: 0;
+        right: 4rem;
+    }
+    .feature_container .feature_text{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    .features .feature_container{
+        left: 20px;
+    }
+    .feature_container i{
+        /* left: 8rem; */
+        position: relative;    
+    }
+}
+
+@media screen and (max-width: 500px){
+    .features .feature_container{
+        height: 810px;
+        
+    }
+    .feature_container .feature_text h1 + p{
+        font-size: 17px;
+    }
+
+    .feature_container .feature_text i {
+        font-size: 27px;
+    }
+
+}
+
+/* End features media query */
 
 /* End Feature Section */
 
@@ -525,7 +598,7 @@ body{
 }
 
 .footer #button-input{
-    /* justify-content: center;
+    /* justify-content: center; <---this block of comment is for reference css
     align-items: center;
     text-decoration: none;
     padding: 10px 50px;
@@ -607,5 +680,37 @@ display: none;
   form button:hover{
     background: #219150;
   }
+
+/* Footer media query */
+@media screen and (max-width: 750px){
+    .footer h1{
+        font-size: 2.1rem;
+    }
+
+    .footer h2{
+        font-size: 1.4rem;
+    }
+
+    .footer .input p{
+        font-size: 14px;
+    }
+    .footer .input #textbox-input{
+        width: 400px;
+    }
+
+    .footer .social-item{
+        height: 25px;
+        width: 25px;
+        margin: 0 35px;
+        justify-content: space-between;
+    }
+
+    .footer .social-item img{
+        height: 35px;
+        width: 35px;
+    }
+
+}
+/* End footer media query */
 
 /* End Footer Section */
