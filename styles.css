@@ -522,8 +522,7 @@ body{
 
 @media screen and (max-width: 500px){
     .features .feature_container{
-        height: 850px;
-        
+        height: 990px;
     }
     .feature_container .feature_text h1 + p{
         font-size: 17px;
