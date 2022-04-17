@@ -124,6 +124,160 @@
     color: #4837ff;
     transition: all 0.3s ease;
 }
+/* Header Media Query */
+@media screen and (max-width: 1300px){
+    .navbar .navbar__container h2{
+        font-size: 1.2rem;
+        right: 1.1rem;
+    }
+    /* .hero_container .hero_img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-right: 2rem;
+    } */
+}
+
+@media screen and (max-width: 1250px){
+    .navbar .navbar__container h2{
+        font-size: 1rem;
+        left: 0.1rem;
+    }
+
+    .navbar__links{
+        font-size: 1.3rem;
+    }
+    .button{
+        font-size: 1.3rem;
+    }
+    #navbar__logo{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #navbar__logo{
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .navbar .navbar__container h2{
+        position: absolute;
+        padding-left: 12rem;
+        padding-top: 12px;
+        display: inline-flex;
+        
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar__menu.active{
+        background: #C0CAED;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo{
+        padding-left: 25px;
+        
+    }
+
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item{
+        width: 100%;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn{
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 50px;
+        margin: 0;
+    }
+
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 880px){
+    .navbar__container #navbar__logo{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .navbar .navbar__container h2{
+        font-size: 15px;
+    }
+}
+
+/* End Header media query */
 /* end header section */
 
 /* contacts section */
@@ -147,6 +301,26 @@
     font-family: 'M PLUS 1', sans-serif;
     color:#091747;
     padding-top: 3rem;
+}
+
+@media screen and (max-width: 960px){
+    .contacts #contact-main-text{
+        font-size: 26px;
+    }
+
+    .contacts .contact-items h1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .contacts #contact-main-text{
+        font-size: 20px;
+    }
+
+    .contacts .contact-items h1{
+        font-size: 17px;
+    }
 }
 
 /* end contacts section */
@@ -263,4 +437,36 @@
     user-select: none;
     display: none;
     }
+
+/* Footer media query */
+@media screen and (max-width: 750px){
+    .footer h1{
+        font-size: 2.1rem;
+    }
+
+    .footer h2{
+        font-size: 1.4rem;
+    }
+
+    .footer .input p{
+        font-size: 14px;
+    }
+    .footer .input #textbox-input{
+        width: 400px;
+    }
+
+    .footer .social-item{
+        height: 25px;
+        width: 25px;
+        margin: 0 35px;
+        justify-content: space-between;
+    }
+
+    .footer .social-item img{
+        height: 35px;
+        width: 35px;
+    }
+
+}
+/* End footer media query */
 /* End Footer Section */
