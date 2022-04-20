@@ -405,8 +405,8 @@ body{
     }
 
     .hero_container .hero_img img{
-        width: 420px;
-        height: 450px;
+        width: 400px;
+        height: 410px;
         padding-right: 5px;
     }
     .navbar .navbar__container h2{
@@ -502,7 +502,14 @@ body{
     }
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 480px){
+    html, body{
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         padding: 0;
+         overflow-x: hidden;
+    }
     .features .feature_container{
         height: 990px;
     }
