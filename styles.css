@@ -459,17 +459,15 @@ body{
 }
 /* Features media query */
 @media screen and (max-width: 1090px){
-    .features{
-        padding-top: 23%;
-    }
     .features .feature{
-        height: 1150px;
+        height: 1050px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 20%;
     }
     .feature .feature_text{
-        width: 50%;  
+        width: 70%;  
     }
     .feature i {
         position: relative;
@@ -514,8 +512,8 @@ body{
     }
     .features .feature{
         height: 590px;
-        margin-bottom: 18%;
-        margin-top: 12%;
+        margin-bottom: 28%;
+        margin-top: 20%;
     }
     .feature .feature_text p{
         font-size: 18px;
@@ -525,6 +523,11 @@ body{
     .feature .feature_text i {
         font-size: 24px;
     }
+
+    .feature .feature_text{
+        margin: 0;
+    }
+
     .feature_text:nth-child(3){
         margin-top: 0;
     }
