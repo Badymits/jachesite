@@ -462,7 +462,7 @@ body{
 /* Features media query */
 @media screen and (max-width: 1090px){
     .features{
-        padding-top: 22%;
+        padding-top: 23%;
     }
     .features .feature{
         height: 1100px;
