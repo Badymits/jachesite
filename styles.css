@@ -462,7 +462,7 @@ body{
 /* Features media query */
 @media screen and (max-width: 1090px){
     .features .feature{
-        height: 948px;
+        height: 1140px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -488,6 +488,7 @@ body{
     }
     .feature .feature_text{
         width: 80%;
+        
     }
     
 }
