@@ -396,7 +396,7 @@ body{
     }
 
     .hero_container .hero_feature h1{
-       font-size: 14px;
+       font-size: 16px;
     }
 
     .hero_container .hero_feature i{
@@ -513,12 +513,12 @@ body{
     .features .feature_container{
         height: 990px;
     }
-    .feature_container .feature_text h1 + p{
-        font-size: 17px;
+    .feature_container .feature_text p{
+        font-size: 16px;
     }
 
     .feature_container .feature_text i {
-        font-size: 27px;
+        font-size: 24px;
     }
 
 }
