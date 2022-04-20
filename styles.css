@@ -261,7 +261,7 @@ body{
 
 /* Hero Section */
 .hero{
-    height: 100vh;
+    height: 70vh;
 }
 
 .hero_container{
@@ -360,8 +360,8 @@ body{
         align-items: center;
         justify-content: center;
         width: 100%;
+       
     }
-
     .hero_container .hero_feature h1{
         margin-left: 1px;
     }
@@ -385,11 +385,9 @@ body{
 @media screen and (max-width: 700px){
     
     .hero_container .hero_img img{
-      
       text-align: center;
       width: 480px;
       height: 450px;
-    
     }
 }
 
@@ -422,7 +420,6 @@ body{
 
 /* End Hero Section */
 
-
 /* Feature Section */
 
 .features .feature{
@@ -437,7 +434,6 @@ body{
     font-weight: 100;
     font-size: 1.6rem;
     margin-bottom: 20px;
-    
 }
 .feature p{
     text-align: justify;
@@ -467,9 +463,9 @@ body{
     color: #091747;
 }
 /* Features media query */
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1090px){
     .features .feature{
-        height: 890px;
+        height: 948px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -479,7 +475,6 @@ body{
     }
     .feature i {
         position: relative;
-        
         margin: 0 auto;
     } 
 }
