@@ -355,7 +355,7 @@ body{
 
 @media screen and (max-width: 1090px){
     .hero{
-        height: 124vh;
+        height: 115vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
