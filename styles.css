@@ -425,22 +425,21 @@ body{
 
 /* Feature Section */
 
-.features .feature_container{
+.features .feature{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     left: 40px;
-    margin: 0 30px;
 }
-.feature_container h1{
+.feature h1{
     text-align: center;
     font-weight: 100;
     font-size: 1.6rem;
     margin-bottom: 20px;
     
 }
-.feature_container p{
+.feature p{
     text-align: justify;
     font-weight: 50;
     font-size: 1.2rem;
@@ -453,65 +452,56 @@ body{
     margin-top: 1.5rem;
 }
 
-.feature_container .feature_text{
-    width: 50%;
-    float: left;
+.feature .feature_text{
+    width: 80%;
+    /* float: left; */
     padding: 25px;
 }
 
-.feature_container i{
+.feature i{
     position: relative;
-    left: 10rem;
-    bottom: 1.4rem;
+    left: 47%;
+    margin: auto;
+    padding-bottom: 5%;
     font-size: 2rem;
     color: #091747;
 }
 /* Features media query */
 @media screen and (max-width: 1150px){
-    /* .feature_container h1 {
-        color: white;
-    } */
-    .features .feature_container{
+    .features .feature{
         height: 890px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 90%;
-        margin: 12px;
     }
-    .feature_container .feature_text h1{
-        width: 100%;
-        float: none;
+    .feature .feature_text{
+        width: 50%;  
     }
-    .feature_container i {
+    .feature i {
         position: relative;
-        /* top: 20%; */
-        /* left: 11.7rem; */
         
-        
+        margin: 0 auto;
     } 
 }
 
 @media screen and (max-width: 880px){
-    .features .feature_container{
-        right: 4px;
-        left: 25px;
+    .features .feature{
         text-align: center;
         padding-bottom: 20%;
+        left: 20px;
     }
-    .feature_container i{
+    .feature i{
         position: relative;
         left: 0;
-        right: 4rem;
     }
-    .feature_container .feature_text{
+    .feature .feature_text{
         width: 80%;
     }
     
 }
 
 @media screen and (max-width: 750px){
-    .features .feature_container{
+    .features .feature{
         left: 20px;
     }
     .feature_container i{

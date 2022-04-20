@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Feature Section */
+
+.features .feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+}
+.feature h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    
+}
+.feature p{
+    text-align: justify;
+    font-weight: 50;
+    font-size: 1.2rem;
+    font-family: 'M PLUS 1', sans-serif;
+}
+.feature_text:nth-child(2){
+    margin-bottom: 1.6rem;
+}
+.feature_text:nth-child(3){
+    margin-top: 1.5rem;
+}
+
+.feature .feature_text{
+    width: 80%;
+    /* float: left; */
+    padding: 25px;
+}
+
+.feature i{
+    position: relative;
+    left: 47%;
+    margin: auto;
+    padding-bottom: 5%;
+    font-size: 2rem;
+    color: #091747;
+}
+/* Features media query */
+@media screen and (max-width: 1150px){
+    .features .feature{
+        height: 890px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature .feature_text{
+        width: 50%;  
+    }
+    .feature i {
+        position: relative;
+        
+        margin: 0 auto;
+    } 
+}
+
+@media screen and (max-width: 880px){
+    .features .feature{
+        text-align: center;
+        padding-bottom: 20%;
+        left: 20px;
+    }
+    .feature i{
+        position: relative;
+        left: 0;
+    }
+    .feature .feature_text{
+        width: 80%;
+    }
+    .feature .feature_text p{
+        color: red;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    .features .feature{
+        left: 20px;
+    }
+    .feature .feature_text p{
+        color: gray;
+    }
+    .feature_container i{
+        /* left: 8rem; */
+        position: relative;    
+    }
+}
+
+@media screen and (max-width: 500px){
+    .features .feature_container{
+        height: 990px;
+    }
+    .feature_container .feature_text h1 + p{
+        font-size: 17px;
+    }
+
+    .feature_container .feature_text i {
+        font-size: 27px;
+    }
+
+}
+
+/* End features media query */
+
+/* End Feature Section */

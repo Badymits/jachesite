@@ -50,3 +50,9 @@ body {
     display: inline-block;
     margin: 0 auto;
   }
+
+  /* Success Media Query */
+@media screen and (max-width: 1090px){
+  
+}
+  /* End Success Media Query */
