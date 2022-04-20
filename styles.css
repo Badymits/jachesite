@@ -510,14 +510,14 @@ body{
          padding: 0;
          overflow-x: hidden;
     }
-    .features .feature_container{
-        height: 990px;
+    .features .feature{
+        height: 890px;
     }
-    .feature_container .feature_text p{
-        font-size: 16px;
+    .feature .feature_text p{
+        font-size: 18px;
     }
 
-    .feature_container .feature_text i {
+    .feature .feature_text i {
         font-size: 24px;
     }
 
