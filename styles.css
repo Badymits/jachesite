@@ -461,6 +461,9 @@ body{
 }
 /* Features media query */
 @media screen and (max-width: 1090px){
+    .features{
+        padding-top: 20%;
+    }
     .features .feature{
         height: 1140px;
         flex-direction: column;
