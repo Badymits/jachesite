@@ -513,7 +513,8 @@ body{
          overflow-x: hidden;
     }
     .features .feature{
-        height: 790px;
+        height: 690px;
+        margin-bottom: 14%;
     }
     .feature .feature_text p{
         font-size: 18px;
@@ -524,7 +525,6 @@ body{
     }
     .feature_text:nth-child(3){
         margin-top: 0;
-        margin-bottom: 15%;
     }
 
 }
