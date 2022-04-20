@@ -355,12 +355,11 @@ body{
 
 @media screen and (max-width: 1090px){
     .hero{
-        height: 130vh;
+        height: 124vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-       
     }
     .hero_container .hero_feature h1{
         margin-left: 1px;
@@ -383,7 +382,6 @@ body{
 }
 
 @media screen and (max-width: 700px){
-    
     .hero_container .hero_img img{
       text-align: center;
       width: 480px;
@@ -421,7 +419,6 @@ body{
 /* End Hero Section */
 
 /* Feature Section */
-
 .features .feature{
     display: flex;
     flex-direction: row;
