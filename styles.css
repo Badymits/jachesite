@@ -520,6 +520,9 @@ body{
     .feature .feature_text i {
         font-size: 24px;
     }
+    .feature_text:nth-child(3){
+        margin-top: 0;
+    }
 
 }
 
