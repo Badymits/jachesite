@@ -294,8 +294,6 @@ body{
     display: inline-flex;
     position: relative;
     left: 1rem;
-    /* max-width: 100%;
-    height: auto; */
     max-width: 100%;
     height: 550px;
 }
@@ -515,7 +513,7 @@ body{
          overflow-x: hidden;
     }
     .features .feature{
-        height: 890px;
+        height: 790px;
     }
     .feature .feature_text p{
         font-size: 18px;
@@ -526,6 +524,7 @@ body{
     }
     .feature_text:nth-child(3){
         margin-top: 0;
+        margin-bottom: 15%;
     }
 
 }
