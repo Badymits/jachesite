@@ -502,7 +502,7 @@ body{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 412px){
     .features .feature_container{
         height: 990px;
     }
