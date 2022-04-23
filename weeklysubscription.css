@@ -363,7 +363,10 @@ span.round-tab:hover {
     padding-bottom: 20px;
 }
 
-#step1 .row{
+#step1 .row,
+#step2 .row,
+#step3 .row,
+#complete .row{
     text-align: center;
 }
 
