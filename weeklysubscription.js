@@ -15,6 +15,9 @@ $(document).ready(function () {
         var $active = $('.wizard .nav-tabs li.active');
         prevTab($active);
     });
+    /* $(".home").click(function (e) {
+
+    }) */
 });
 function nextTab(elem) {
     $(elem).next().find('a[data-toggle="tab"]').click();

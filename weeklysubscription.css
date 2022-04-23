@@ -265,6 +265,7 @@ body{
 }
 .next-step:hover,
 .next-step,
+.home,
 .prev-step:hover,
 .prev-step{
     position: relative;
@@ -332,6 +333,38 @@ span.round-tab:hover {
     .round1, .round2, .round3, .round4{
         font-size:10px !important;
     }
+}
+/* .InputFields{
+    padding-top: 16px;
+} */
+.InputFields label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+.InputFields input[type=text], input[type=number]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.InputFields #textbox-age,
+.InputFields #textbox-gender{
+    width: 15%;
+}
+
+.col-md-12 span{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#step1 .row{
+    text-align: center;
 }
 
 

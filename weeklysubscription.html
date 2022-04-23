@@ -21,33 +21,6 @@
 
     <!-- Header section -->
 
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/index.html" id="navbar__logo">JACHE</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <h2>Better Nutrition for a better life</h2>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/products.html" class="navbar__links">Products</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/contact.html" class="navbar__links">Contact</a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="#footer" class="button">Subscribe</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- End header section -->
-
     <div class="containers">
         <div class="row">
             <section>
@@ -58,7 +31,7 @@
                                 <li role="presentation" class="active stepactive1">
                                     <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
                                         <span class="round-tab round1">
-                                            1.Your detail
+                                            1.Personal Information
                                         </span>
                                     </a>
                                 </li>
@@ -85,20 +58,41 @@
                                 </li>
                             </ul>
                     </div>
-                    <form role="form">
+                    <form role="form" data-netlify="true">
                         <div class="tab-content">
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h1>Your content</h1>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat</span>
+                                        <h1>Personal Information</h1>
+                                        <span>Please fill out the information below</span>
+                                    </div>
+                                    <div class="InputFields">
+                                        <label>Full Name: </label>
+                                        <input type="text" name="UserFullName" id="textbox-name" placeholder="Enter Full Name..." >
+                                        </br>
+                                        <label>Address: </label>
+                                        <input type="text" name="UserAddress" id="textbox-address" placeholder="Enter Full Address">
+                                        </br>
+                                        <label>Mobile Number: </label>
+                                        <input type="number" name="UserContactNo" id="textbox-contactno" placeholder="Enter CellPhone Number" pattern="[0-9]{1}[0-9]{9}"> 
+                                        </br>
+                                        <label>Age</label>
+                                        <input type="text" name="UserAge" id="textbox-age" placeholder="Enter your age..">
+                                        <label>Gender</label>
+                                        <input type="text" list="genders" name="UserGender" id="textbox-gender" placeholder="Select your gender..">
+                                            <datalist id="genders">
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </datalist>
+                                        </br>
+                                        <label>Occupation</label>
+                                        <input type="text" name="UserOccupation" id="textbox-occupation" placeholder="Enter your occupation">
                                     </div>
                                 </div>
                                 <ul class="list-inline text-center">
-                                    <li><button type="button" class="btn next-step">Save and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
+                                    <li><button type="button" onclick="window.location.href='index.html'" class="btn home">Back to Home&nbsp;&nbsp;<i class="fa fa-home"></i></button></li>
+                                    <li><button type="button" class="btn next-step">Savse and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step2">
@@ -142,6 +136,7 @@
                                 <ul class="list-inline text-center">
                                     <li><button type="button" class="btn prev-step"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</button></li>
                                     <li><button type="button" class="btn btn-info-full next-step">Save and Submit</button></li>
+                                    
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
