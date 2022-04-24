@@ -38,21 +38,21 @@
                                 <li role="presentation" class="disabled stepactive2">
                                     <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
                                         <span class="round-tab round2">
-                                            2.order
+                                            2.Select Supplements
                                         </span>
                                     </a>
                                 </li>
                                 <li role="presentation" class="disabled stepactive3">
                                     <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
                                         <span class="round-tab round3">
-                                            3.payment
+                                            3. Date of Delivery
                                         </span>
                                     </a>
                                 </li>
                                 <li role="presentation" class="disabled stepactive4">
                                     <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
                                         <span class="round-tab round4">
-                                            Done!
+                                            4. Mode of Payment
                                         </span>
                                     </a>
                                 </li>
@@ -92,41 +92,32 @@
                                 </div>
                                 <ul class="list-inline text-center">
                                     <li><button type="button" onclick="window.location.href='index.html'" class="btn home">Back to Home&nbsp;&nbsp;<i class="fa fa-home"></i></button></li>
-                                    <li><button type="button" class="btn next-step">Savse and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
+                                    <li><button type="button" class="btn next-step">Save and Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step2">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h1>Your content</h1>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat</span>
+                                        <h1>Select your supplements</h1>
+                                        <span>Customize your subscription delivery package</span>
                                     </div>
-                                    <div class="InputFields">
-                                        <label>Full Name: </label>
-                                        <input type="text" name="UserFullName" id="textbox-name" placeholder="Enter Full Name..." >
-                                        </br>
-                                        <label>Address: </label>
-                                        <input type="text" name="UserAddress" id="textbox-address" placeholder="Enter Full Address">
-                                        </br>
-                                        <label>Mobile Number: </label>
-                                        <input type="number" name="UserContactNo" id="textbox-contactno" placeholder="Enter Mobile Phone Number" pattern="[0-9]{1}[0-9]{9}"> 
-                                        </br>
-                                        <label>Age</label>
-                                        <input type="text" name="UserAge" id="textbox-age" placeholder="Enter your age..">
-                                        <label>Gender</label>
-                                        <input type="text" list="genders" name="UserGender" id="textbox-gender" placeholder="Select your gender..">
-                                            <datalist id="genders">
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Other">Other</option>
-                                            </datalist>
-                                        </br>
-                                        <label>Occupation</label>
-                                        <input type="text" name="UserOccupation" id="textbox-occupation" placeholder="Enter your occupation">
+                                    <div class="InputFields1">
+                                        <label>Select Supplements</label>
+                                        <input type="text" list="supplements" name="UserSupplement1" id="textbox-supplement1" placeholder="Select your supplements..">
+                                        <datalist id="supplements">
+                                            <option value="Centrum">Centrum</option>
+                                            <option value="Omega-3">Omega-3 fish oil</option>
+                                            <option value="Enervon Multivitamins">Enervon Multivitamins</option>
+                                        </datalist>  
+                                        <label>Select number of pieces</label>
+                                        <input onkeyup="check()" type="number" list="pieceNumber" name="UserAmount1" id="textbox-amount1" placeholder="Select Amount of tablets..">
+                                        <datalist id="pieceNumber">
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                        </datalist>                                                                 
                                     </div>
+                                    <button id="add_btn" type="button">Add Row</button>
                                 </div>
                                 <ul class="list-inline text-center">
                                     <li><button type="button" class="btn prev-step"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</button></li>
@@ -136,11 +127,12 @@
                             <div class="tab-pane" role="tabpanel" id="step3">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h1>Your content</h1>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat</span>
+                                        <h1>Select Date of Delivery</h1>
+                                        <span>Make sure that someone will pick up your delivery!</span>
+                                    </div>
+                                    <div class="InputFields2">
+                                        <label>Date of Delivery</label>
+                                        <input type="date" id="dateOfDelivery" name="Delivery">
                                     </div>
                                 </div>
                                 <ul class="list-inline text-center">
@@ -149,13 +141,26 @@
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="complete">
-                                <div class="col-md-12">
-                                    <h1>Your Last Page</h1>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat</span>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Select your mode of payment</h1>
+                                        <span>Please fill up other details</span>
+                                    </div>
+                                    <div class="InputFields3">
+                                        <span>Type of Payment: Weekly Payment</span>
+                                        <label>Cardholder Name: </label>
+                                        <input type="text" name="UserFullName" id="textbox-name" placeholder="Enter Name..." >
+                                        </br>
+                                        <label>Select Payment Method</label></br>
+                                        <input type="radio" id="textbox-paymentVisa" value="Visa">
+                                        <label>Visa</label>                                       
+                                        </br>
+                                        <input type="radio" id="textbox-paymentMaster" value="MasterCard">
+                                        <label>MasterCard</label>        
+                                        </br>
+                                    </div>
                                 </div>
+                                
                                 <ul class="list-inline text-center">
                                     <li><button type="button" class="btn prev-step"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</button></li>
                                     <li><button type="button" class="btn btn-info-full next-step">Save and Submit</button></li>
@@ -169,6 +174,65 @@
             </section>
         </div>
     </div>
+    <script>
+        var count=1;
+        $("#add_btn").click(function(){ // function to increment the count to indicate number of row added
+        
+        $(".InputFields1").append(addNewRow(count));
+            count++;
+        });
+
+    function addNewRow(count){ // dynamically create a new row of input 
+        var newrow = 
+                '</br>' +
+                '<label>Select Supplements</label>'+
+                '<input type="text" list="supplements" name="UserSupplement1" id="textbox-supplement1" placeholder="Select your supplements..">' +
+                '<datalist id="supplements">' +
+                    '<option value="Centrum">Centrum</option>' +
+                    '<option value="Omega-3">Omega-3 fish oil</option>' +
+                    '<option value="Enervon Multivitamins">Enervon Multivitamins</option>' +
+                '</datalist>' +  
+                '<label>Select number of pieces</label>' +
+                '<input type="number" onkeyup="check()" list="pieceNumber" name="UserAmount1" id="textbox-amount1" placeholder="Select Amount of tablets..">' +
+                '<datalist id="pieceNumber">' +
+                    '<option value="5">5</option>' +
+                    '<option value="10">10</option>' +
+                    '<option value="15">15</option>' +
+                '</datalist>';
+        return newrow;
+    }
+    var btn = document.querySelector("#add_btn");
+    function check(){ // checks and gets the value from the datalists
+        const arr = [];
+        /* var e = document.getElementById('textbox-amount1').value; */
+        var e = document.querySelectorAll("textbox-amount1").value;
+        arr.push(e);
+        e = 0;
+        checkSum(arr);
+    }
+    
+    function checkSum(numArr){ // function to cgheck if datalist value equal to 30
+        let sum = 0;
+        for (let i = 0; i <numArr.length; i++){
+            sum += numArr[i];
+            console.log(sum);
+            if (sum >= 30){ // if equal to 30, button to add new row will be hidden
+                btn.style.display = "none";
+            }
+        }
+    }
+    var today = new Date().toISOString().split('T')[0]; // restrict user fromn selecting date before current day
+    document.getElementsByName("Delivery")[0].setAttribute('min', today);
+    /* e.addEventListener('input', function(){
+        var sum = sum + e;
+    });
+    console.log(e);
+    console.log("Hello world");
+    var sum = sum + e;
+    if (sum == 30){
+        btn.style.display = "none";
+    } */
+    </script>
     <script src="./weeklysubscription.js"></script>
 </body>
 </html>

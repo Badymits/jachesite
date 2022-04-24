@@ -342,7 +342,10 @@ span.round-tab:hover {
     width: 120px;
     text-align: right;
 }
-.InputFields input[type=text], input[type=number]{
+.InputFields input[type=text], input[type=number],
+.InputFields1 input[type=text], input[type=number],
+.InputFields2 input[type=date],
+.InputFields3 input[type=text]{
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -355,6 +358,14 @@ span.round-tab:hover {
 .InputFields #textbox-age,
 .InputFields #textbox-gender{
     width: 15%;
+}
+
+.InputFields1 #textbox-supplement1,
+.InputFields1 #textbox-amount1,
+.InputFields1 #textbox-supplement2,
+.InputFields1 #textbox-amount2,
+.InputFields3 #textbox-payment{
+    width: 20%;
 }
 
 .col-md-12 span{

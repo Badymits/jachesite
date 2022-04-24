@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () { // responsible to switch in between tabs
     $('.nav-tabs > li a[title]').tooltip();
     $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
         var $target = $(e.target);
