@@ -484,6 +484,7 @@ body{
 
 @media screen and (max-width: 880px){
     .features .feature{
+        margin: 0;
         text-align: center;
         padding-bottom: 20%;
         left: 20px;
@@ -493,6 +494,7 @@ body{
         left: 0;
     }
     .feature .feature_text{
+        margin: 0;
         width: 80%;
     }
     .feature .feature_text p{
