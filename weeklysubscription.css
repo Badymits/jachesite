@@ -355,6 +355,12 @@ span.round-tab:hover {
     box-sizing: border-box;
 }
 
+.InputFields3 input[type=radio]{
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+}
+
 .InputFields #textbox-age,
 .InputFields #textbox-gender{
     width: 15%;
@@ -368,6 +374,7 @@ span.round-tab:hover {
     width: 20%;
 }
 
+.InputFields3 span,
 .col-md-12 span{
     font-size: 16px;
     font-weight: 600;
@@ -377,7 +384,7 @@ span.round-tab:hover {
 #step1 .row,
 #step2 .row,
 #step3 .row,
-#complete .row{
+#complete .col-md-12{
     text-align: center;
 }
 

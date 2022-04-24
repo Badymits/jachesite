@@ -422,8 +422,10 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    left: 40px;
+    left: 60px;
+    height: auto; 
 }
+
 .feature h1{
     text-align: center;
     font-weight: 100;
@@ -437,15 +439,18 @@ body{
     font-family: 'M PLUS 1', sans-serif;
 }
 .feature_text:nth-child(2){
-    margin-bottom: 1.6rem;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100%;
 }
-.feature_text:nth-child(3){
+/* .feature_text:nth-child(3){
     margin-top: 1.5rem;
-}
+} */
 
 .feature .feature_text{
-    width: 80%;
-    /* float: left; */
+    display: inline-block;
+    width: 100%;
     padding: 25px;
 }
 
