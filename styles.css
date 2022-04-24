@@ -373,6 +373,9 @@ body{
 }
 
 @media screen and (max-width: 880px){
+    .hero{
+        height: 580px;
+    }
     .hero_container .hero_img img{
         padding-right: 1rem;
         width: 550px;
