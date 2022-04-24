@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Welcome to Jache!</title>   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                     <a href="/contact.html" class="navbar__links">Contact</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="#footer" class="button">Subscribe</a>
+                    <a onclick="window.location.href='products.html#price'" class="button">Subscribe</a>
                 </li>
             </ul>
         </div>
@@ -155,6 +156,9 @@
             btn.style.display = "none";
           }
         }
+        $(".button").on('click',function(){
+            window.location = "products.html#price";
+        });
      </script>
     <!-- end footer section -->
 
