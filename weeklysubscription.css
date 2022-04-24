@@ -267,7 +267,8 @@ body{
 .next-step,
 .home,
 .prev-step:hover,
-.prev-step{
+.prev-step,
+.submit{
     position: relative;
     background-color: #2ED4E0;
     font-size: 16px;
@@ -344,7 +345,7 @@ span.round-tab:hover {
 }
 .InputFields input[type=text], input[type=number],
 .InputFields1 input[type=text], input[type=number],
-.InputFields2 input[type=date],
+.InputFields2 input[type=date], input[type=time],
 .InputFields3 input[type=text]{
     width: 40%;
     padding: 12px 20px;
@@ -355,14 +356,21 @@ span.round-tab:hover {
     box-sizing: border-box;
 }
 
-.InputFields3 input[type=radio]{
-    float: left;
-    width: 20px;
-    margin-right: 10px;
+.InputFields3 .radiolabel{
+    min-width: 80px;
+    display: inline-block;
+    position: relative;
 }
 
+.InputFields3 input[type=radio]{
+    cursor: pointer;
+}
+
+
 .InputFields #textbox-age,
-.InputFields #textbox-gender{
+.InputFields #textbox-gender,
+.InputFields3 #textbox-city,
+.InputFields3 #textbox-zip{
     width: 15%;
 }
 
@@ -388,4 +396,22 @@ span.round-tab:hover {
     text-align: center;
 }
 
+.InputFields3{
+    text-align: center;
+}
 
+.InputFields3 label{
+    width: 120px;
+}
+
+.InputFields3 #cardholder{
+    width: 130px;
+}
+
+/* #complete #button-input{
+    position: relative;
+    background-color: #2ED4E0;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 30px;
+} */
