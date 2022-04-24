@@ -382,6 +382,29 @@ span.round-tab:hover {
     width: 20%;
 }
 
+.InputFields .error-text{
+    position: relative;
+    margin: 15px 0 -5px 0;
+    background: #e74c3c;
+    color: #fceae8;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    user-select: none;
+    display: none;
+}
+
+.InputFields .error-text::before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    background: #e74c3c;
+    right: 20px;
+    top: -7px;
+    transform: rotate(45deg);
+}
+
 .InputFields3 span,
 .col-md-12 span{
     font-size: 16px;

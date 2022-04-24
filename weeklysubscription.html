@@ -76,6 +76,12 @@
                                         <label>Mobile Number: </label>
                                         <input type="number" name="UserContactNo" id="textbox-contactno" placeholder="Enter Mobile Phone Number" pattern="[0-9]{1}[0-9]{9}"> 
                                         </br>
+                                        <label>Email Address: </label>
+                                        <input type="text" onkeyup="check()" name="UserEmailAddress" id="textbox-email" placeholder="Enter Email Address">
+                                        <div class="error-text">
+                                            Please Enter Valid Email Address
+                                         </div> 
+                                        </br>
                                         <label>Age</label>
                                         <input type="text" name="UserAge" id="textbox-age" placeholder="Enter your age..">
                                         <label>Gender</label>
@@ -152,32 +158,32 @@
                                     <div class="InputFields3">
                                         <h3>Type of Payment: Weekly Payment</h3></br>
                                         <label id="cardholder">Cardholder Name: </label>
-                                        <input type="text" name="UserFullName" id="textbox-name" placeholder="Enter Name..." >
+                                        <input type="text" name="UserCardHolderName" id="textbox-name" placeholder="Enter Name..." >
                                         </br>
                                         <h4>Select Payment Method</h4></br>
-                                        <input type="radio" name="paymentmode" id="textbox-paymentVisa" value="Visa">
+                                        <input type="radio" name="UserPaymentVisa" id="textbox-paymentVisa" value="Visa">
                                         <label class="radiolabel" for="textbox-paymentVisa">Visa</label>                                       
                                         </br>
-                                        <input type="radio" name="paymentmode" id="textbox-paymentMaster" value="MasterCard">
+                                        <input type="radio" name="UserPaymentMasterCard" id="textbox-paymentMaster" value="MasterCard">
                                         <label class="radiolabel" for="textbox-paymentMaster">MasterCard</label>        
                                         </br>
-                                        <input type="radio" name="paymentmode" id="textbox-paymentAmex" value="AMEX">
+                                        <input type="radio" name="UserPaymentAMEX" id="textbox-paymentAmex" value="AMEX">
                                         <label class="radiolabel" for="textbox-paymentAmex">AMEX</label>        
                                         </br>
-                                        <input type="radio" name="paymentmode" id="textbox-cod" value="Cash-On-Delivery">
+                                        <input type="radio" name="UserPaymentCOD" id="textbox-cod" value="Cash-On-Delivery">
                                         <label class="radiolabel" for="textbox-cod">Cash On Delivery</label>        
                                         </br>
                                         <h3>Billing Address: </h3></br>
                                         <label>Address: </label>
-                                        <input type="text" name="UserAddress" id="textbox-address" placeholder="Enter Full Address">
+                                        <input type="text" name="UserBillAddress" id="textbox-address" placeholder="Enter Full Address">
                                         </br>
                                         <label>City: </label>
-                                        <input type="text" name="UserContactNo" id="textbox-city" placeholder="Enter City"> 
+                                        <input type="text" name="UserCityAddress" id="textbox-city" placeholder="Enter City"> 
                                         <label>Postal/Zip Code: </label>
-                                        <input type="number" name="UserContactNo" id="textbox-zip" placeholder="Enter Postal Zip Code"> 
+                                        <input type="number" name="UserPostalCode" id="textbox-zip" placeholder="Enter Postal Zip Code"> 
                                         </br>
                                         <label>State/Province: </label>
-                                        <input type="text" name="UserContactNo" id="textbox-province" placeholder="Enter State/Province"> 
+                                        <input type="text" name="UserProvince" id="textbox-province" placeholder="Enter State/Province"> 
                                         </br>
                                     </div>
                                 </div>
@@ -244,15 +250,38 @@
     }
     var today = new Date().toISOString().split('T')[0]; // restrict user fromn selecting date before current day
     document.getElementsByName("Delivery")[0].setAttribute('min', today);
-    /* e.addEventListener('input', function(){
-        var sum = sum + e;
-    });
-    console.log(e);
-    console.log("Hello world");
-    var sum = sum + e;
-    if (sum == 30){
-        btn.style.display = "none";
-    } */
+
+    const email = document.querySelector("#textbox-email");
+        const icon1 = document.querySelector(".icon1");
+        const icon2 = document.querySelector(".icon2");
+        const error = document.querySelector(".error-text");
+        const btn = document.querySelector("#button-input");
+        let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        function check(){
+          if(email.value.match(regExp)){
+            email.style.borderColor = "#27ae60";
+            email.style.background = "#eafaf1";
+            icon1.style.display = "none";
+            icon2.style.display = "block";
+            error.style.display = "none";
+            btn.style.display = "inline";
+          }else{
+            email.style.borderColor = "#e74c3c";
+            email.style.background = "#fceae9";
+            icon1.style.display = "block";
+            icon2.style.display = "none";
+            error.style.display = "block";
+            btn.style.display = "none";
+          }
+          if(email.value == ""){
+            email.style.borderColor = "lightgrey";
+            email.style.background = "#fff";
+            icon1.style.display = "none";
+            icon2.style.display = "none";
+            error.style.display = "none";
+            btn.style.display = "none";
+          }
+        }
     </script>
     <script src="./weeklysubscription.js"></script>
 </body>
