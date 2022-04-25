@@ -446,7 +446,7 @@ span.round-tab:hover {
         font-size: 12px;
         width: 50px;
         height: 50px;
-        line-height: 50px;
+        line-height: 30px;
     }
     .wizard .nav-tabs > li a{
         background: transparent;
@@ -489,13 +489,13 @@ span.round-tab:hover {
     }
 }
 
-@media(min-width: 420px) and (max-width: 680px){
+@media(max-width: 680px){
     .wizard{
         width: 100%;
         margin: auto;
     }
     span.round-tab{
-        font-size: 1px;
+        line-height: 30px;
     }
     .col-md-12 h1{
         font-size: 26px;
