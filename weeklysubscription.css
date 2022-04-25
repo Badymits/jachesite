@@ -336,7 +336,7 @@ span.round-tab:hover {
     }
 }
 /* .InputFields{
-    padding-top: 16px;
+    background-color: gray;
 } */
 .InputFields label{
     display: inline-block;
@@ -433,4 +433,96 @@ span.round-tab:hover {
 
 #warning{
     color: red;
+}
+
+@media( min-width : 520px ) and ( max-width : 1090px ){
+    .wizard{
+        width: 90%;
+        height: auto !important;
+        margin: auto;
+    }
+    span.round-tab{
+        font-size: 12px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .wizard .nav-tabs > li a{
+        background: transparent;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .round1, .round2, .round3, .round4{
+        font-size: 12px;
+    }
+    .col-md-12 h1{
+        font-size: 26px;
+    }
+    .col-md-12 span{
+        font-size: 16px;
+    }
+    .InputFields input[type=text], input[type=number],
+    .InputFields2 input[type=date], input[type=time],
+    .InputFields3 input[type=text]{
+        width: 65%;
+    }
+    .InputFields #textbox-age,
+    .InputFields #textbox-gender,
+    .InputFields3 #textbox-city,
+    .InputFields3 #textbox-zip{
+        width: 24%;
+    }
+
+    .InputFields1 label{
+        font-size: 12px;
+        width: 100px;
+        display: inline-block;
+    }
+    .InputFields1 #textbox-supplement1,
+    .InputFields1 #textbox-amount1{
+        width: 80%;
+    }
+    .InputFields1 input::placeholder{
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 420px) and (max-width: 680px){
+    .wizard{
+        width: 100%;
+        margin: auto;
+    }
+    span.round-tab{
+        font-size: 1px;
+    }
+    .col-md-12 h1{
+        font-size: 26px;
+    }
+    .col-md-12 span{
+        font-size: 16px;
+    }
+    .InputFields input[type=text], input[type=number],
+    .InputFields2 input[type=date], input[type=time],
+    .InputFields3 input[type=text]{
+        width: 70%;
+    }
+
+    .InputFields label,
+    .InputFields1 label{
+        width: 100px;
+        display: inline-block;
+    }
+
+    .InputFields1 #textbox-supplement1,
+    .InputFields1 #textbox-amount1{
+        width: 70%;
+    }
+
+    .InputFields #textbox-age,
+    .InputFields #textbox-gender,
+    .InputFields3 #textbox-city,
+    .InputFields3 #textbox-zip{
+        width: 70%;
+    }
 }
