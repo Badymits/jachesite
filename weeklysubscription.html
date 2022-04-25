@@ -65,27 +65,29 @@
                                     <div class="col-md-12">
                                         <h1>Personal Information</h1>
                                         <span>Please fill out the information below</span>
+                                        </br>
+                                        <span id="warning">All fields are required</span>
                                     </div>
                                     <div class="InputFields">
                                         <label>Full Name: </label>
-                                        <input type="text" name="UserFullName" id="textbox-name" placeholder="Enter Full Name..." >
+                                        <input type="text" name="UserFullName" id="textbox-name" placeholder="Enter Full Name..." required >
                                         </br>
                                         <label>Address: </label>
-                                        <input type="text" name="UserAddress" id="textbox-address" placeholder="Enter Full Address">
+                                        <input type="text" name="UserAddress" id="textbox-address" placeholder="Enter Full Address" required>
                                         </br>
                                         <label>Mobile Number: </label>
-                                        <input type="number" name="UserContactNo" id="textbox-contactno" placeholder="Enter Mobile Phone Number" pattern="[0-9]{1}[0-9]{9}"> 
+                                        <input type="number" name="UserContactNo" id="textbox-contactno" placeholder="Enter Mobile Phone Number" pattern="[0-9]{1}[0-9]{9}" required> 
                                         </br>
                                         <label>Email Address: </label>
-                                        <input type="text" onkeyup="check()" name="UserEmailAddress" id="textbox-email" placeholder="Enter Email Address">
+                                        <input type="text" onkeyup="check()" name="UserEmailAddress" id="textbox-email" placeholder="Enter Email Address" required>
                                         <div class="error-text">
                                             Please Enter Valid Email Address
                                          </div> 
                                         </br>
                                         <label>Age</label>
-                                        <input type="text" name="UserAge" id="textbox-age" placeholder="Enter your age..">
+                                        <input type="text" name="UserAge" id="textbox-age" placeholder="Enter your age.." required>
                                         <label>Gender</label>
-                                        <input type="text" list="genders" name="UserGender" id="textbox-gender" placeholder="Select your gender..">
+                                        <input type="text" list="genders" name="UserGender" id="textbox-gender" placeholder="Select your gender.." required>
                                             <datalist id="genders">
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
@@ -93,7 +95,7 @@
                                             </datalist>
                                         </br>
                                         <label>Occupation</label>
-                                        <input type="text" name="UserOccupation" id="textbox-occupation" placeholder="Enter your occupation">
+                                        <input type="text" name="UserOccupation" id="textbox-occupation" placeholder="Enter your occupation" required>
                                     </div>
                                 </div>
                                 <ul class="list-inline text-center">
@@ -106,17 +108,19 @@
                                     <div class="col-md-12">
                                         <h1>Select your supplements</h1>
                                         <span>Customize your subscription delivery package</span>
+                                        </br>
+                                        <span id="warning">All fields are required</span>
                                     </div>
                                     <div class="InputFields1">
                                         <label>Select Supplements</label>
-                                        <input type="text" list="supplements" name="UserSupplement1" id="textbox-supplement1" placeholder="Select your supplements..">
+                                        <input type="text" list="supplements" name="UserSupplement1" id="textbox-supplement1" placeholder="Select your supplements.." required>
                                         <datalist id="supplements">
                                             <option value="Centrum">Centrum</option>
                                             <option value="Omega-3">Omega-3 fish oil</option>
                                             <option value="Enervon Multivitamins">Enervon Multivitamins</option>
                                         </datalist>  
                                         <label>Select number of pieces</label>
-                                        <input onkeyup="check()" type="number" list="pieceNumber" name="UserAmount1" id="textbox-amount1" placeholder="Select Amount of tablets..">
+                                        <input onkeyup="check()" type="number" list="pieceNumber" name="UserAmount1" id="textbox-amount1" placeholder="Select Amount of tablets.." required>
                                         <datalist id="pieceNumber">
                                             <option value="5">5</option>
                                             <option value="10">10</option>
@@ -135,13 +139,15 @@
                                     <div class="col-md-12">
                                         <h1>Select Date of Delivery</h1>
                                         <span>Make sure that someone will pick up your delivery!</span>
+                                        </br>
+                                        <span id="warning">All fields are required</span>
                                     </div>
                                     <div class="InputFields2">
                                         <label>Date of Delivery</label>
-                                        <input type="date" id="dateOfDelivery" name="Delivery">
+                                        <input type="date" id="dateOfDelivery" name="Delivery" required>
                                         </br>
                                         <label>Time of Delivery</label>
-                                        <input type="time" id="timeofDelivery" name="Delivery">
+                                        <input type="time" id="timeofDelivery" name="Delivery" required>
                                     </div>
                                 </div>
                                 <ul class="list-inline text-center">
@@ -154,20 +160,22 @@
                                     <div class="col-md-12">
                                         <h1>Select your mode of payment</h1>
                                         <span>Please fill up other details</span>
+                                        </br>
+                                        <span id="warning">All fields are required</span>
                                     </div>
                                     <div class="InputFields3">
-                                        <h3>Type of Payment: Weekly Payment</h3></br>
+                                        <h3>Type of Plan Payment: Weekly Payment</h3></br>
                                         <label id="cardholder">Cardholder Name: </label>
-                                        <input type="text" name="UserCardHolderName" id="textbox-name" placeholder="Enter Name..." >
+                                        <input type="text" name="UserCardHolderName" id="textbox-name" placeholder="Enter Name..." required>
                                         </br>
                                         <h4>Select Payment Method</h4></br>
                                         <input type="radio" name="UserPaymentVisa" id="textbox-paymentVisa" value="Visa">
                                         <label class="radiolabel" for="textbox-paymentVisa">Visa</label>                                       
                                         </br>
-                                        <input type="radio" name="UserPaymentMasterCard" id="textbox-paymentMaster" value="MasterCard">
+                                        <input type="radio" name="UserPaymentMasterCard" id="textbox-paymentMaster" value="MasterCard" >
                                         <label class="radiolabel" for="textbox-paymentMaster">MasterCard</label>        
                                         </br>
-                                        <input type="radio" name="UserPaymentAMEX" id="textbox-paymentAmex" value="AMEX">
+                                        <input type="radio" name="UserPaymentAMEX" id="textbox-paymentAmex" value="AMEX" >
                                         <label class="radiolabel" for="textbox-paymentAmex">AMEX</label>        
                                         </br>
                                         <input type="radio" name="UserPaymentCOD" id="textbox-cod" value="Cash-On-Delivery">
@@ -175,15 +183,15 @@
                                         </br>
                                         <h3>Billing Address: </h3></br>
                                         <label>Address: </label>
-                                        <input type="text" name="UserBillAddress" id="textbox-address" placeholder="Enter Full Address">
+                                        <input type="text" name="UserBillAddress" id="textbox-address" placeholder="Enter Full Address" required>
                                         </br>
                                         <label>City: </label>
-                                        <input type="text" name="UserCityAddress" id="textbox-city" placeholder="Enter City"> 
+                                        <input type="text" name="UserCityAddress" id="textbox-city" placeholder="Enter City" required> 
                                         <label>Postal/Zip Code: </label>
-                                        <input type="number" name="UserPostalCode" id="textbox-zip" placeholder="Enter Postal Zip Code"> 
+                                        <input type="number" name="UserPostalCode" id="textbox-zip" placeholder="Enter Postal Zip Code" required> 
                                         </br>
                                         <label>State/Province: </label>
-                                        <input type="text" name="UserProvince" id="textbox-province" placeholder="Enter State/Province"> 
+                                        <input type="text" name="UserProvince" id="textbox-province" placeholder="Enter State/Province" required> 
                                         </br>
                                     </div>
                                 </div>
@@ -213,14 +221,14 @@
         var newrow = 
                 '</br>' +
                 '<label>Select Supplements</label>'+
-                '<input type="text" list="supplements" name="UserSupplement1" id="textbox-supplement1" placeholder="Select your supplements..">' +
+                '<input type="text" list="supplements" name="UserSupplement1" id="textbox-supplement1" placeholder="Select your supplements.." required>' +
                 '<datalist id="supplements">' +
                     '<option value="Centrum">Centrum</option>' +
                     '<option value="Omega-3">Omega-3 fish oil</option>' +
                     '<option value="Enervon Multivitamins">Enervon Multivitamins</option>' +
                 '</datalist>' +  
                 '<label>Select number of pieces</label>' +
-                '<input type="number" onkeyup="check()" list="pieceNumber" name="UserAmount1" id="textbox-amount1" placeholder="Select Amount of tablets..">' +
+                '<input type="number" onkeyup="check()" list="pieceNumber" name="UserAmount1" id="textbox-amount1" placeholder="Select Amount of tablets.." required>' +
                 '<datalist id="pieceNumber">' +
                     '<option value="5">5</option>' +
                     '<option value="10">10</option>' +
@@ -251,37 +259,6 @@
     var today = new Date().toISOString().split('T')[0]; // restrict user fromn selecting date before current day
     document.getElementsByName("Delivery")[0].setAttribute('min', today);
 
-    const email = document.querySelector("#textbox-email");
-        const icon1 = document.querySelector(".icon1");
-        const icon2 = document.querySelector(".icon2");
-        const error = document.querySelector(".error-text");
-        const btn = document.querySelector("#button-input");
-        let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-        function check(){
-          if(email.value.match(regExp)){
-            email.style.borderColor = "#27ae60";
-            email.style.background = "#eafaf1";
-            icon1.style.display = "none";
-            icon2.style.display = "block";
-            error.style.display = "none";
-            btn.style.display = "inline";
-          }else{
-            email.style.borderColor = "#e74c3c";
-            email.style.background = "#fceae9";
-            icon1.style.display = "block";
-            icon2.style.display = "none";
-            error.style.display = "block";
-            btn.style.display = "none";
-          }
-          if(email.value == ""){
-            email.style.borderColor = "lightgrey";
-            email.style.background = "#fff";
-            icon1.style.display = "none";
-            icon2.style.display = "none";
-            error.style.display = "none";
-            btn.style.display = "none";
-          }
-        }
     </script>
     <script src="./weeklysubscription.js"></script>
 </body>

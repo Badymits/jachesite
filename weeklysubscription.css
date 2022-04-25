@@ -431,10 +431,6 @@ span.round-tab:hover {
     width: 130px;
 }
 
-/* #complete #button-input{
-    position: relative;
-    background-color: #2ED4E0;
-    font-size: 16px;
-    color: #FFFFFF;
-    margin-top: 30px;
-} */
+#warning{
+    color: red;
+}
